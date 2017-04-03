@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tanya.learningandroid.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:minWidth="200dp"
+        android:minHeight="150dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/main_image"/>
+
+    <Button
+        android:id="@+id/button_load_photo"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="onClickLoadPhotoButton"
+        android:layout_below="@+id/main_image"
+        android:text="@string/main_button_center" />
+
+</RelativeLayout>
